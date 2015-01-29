@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby -roptparse -rpathname -ryaml
+
+lib = File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require "tm_bundle_support"
+require "tm_bundle/command"
